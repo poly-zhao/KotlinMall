@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.stark.usercenter.activity.RegisterActivity">
+
+    <com.stark.base.wighets.HeaderBar
+        android:id="@+id/mHb"
+        style="@style/MatchWrap"
+        app:isShowBack="true"
+        app:titleText="注册" />
+
+    <EditText
+        android:id="@+id/mEtTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_tel"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/mEtVerifyCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_verify"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/mEtPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_pwd"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/mEtPwd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_pwd1"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/mBtnRegister"
+        style="@style/FullBtnStyle"
+        android:hint="注册" />
+</LinearLayout>

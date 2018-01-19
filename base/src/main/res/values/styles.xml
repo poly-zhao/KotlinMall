@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 横屏按钮样式，带不可用状态 -->
+    <!-- 按钮样式-->
+    <style name="FullBtnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:background">@drawable/btn_common_selector</item>
+        <item name="android:padding">@dimen/common_padding_middle</item>
+        <item name="android:layout_margin">@dimen/common_margin</item>
+        <item name="android:enabled">true</item>
+    </style>
+
+    <!-- 横向分隔线 -->
+    <style name="DividerFixedHeight">
+        <item name="android:background">@color/common_divider</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_divider_height</item>
+    </style>
+    <!-- 竖向分隔线 -->
+    <style name="DividerFixedWidth">
+        <item name="android:background">@color/common_divider</item>
+        <item name="android:layout_width">@dimen/common_divider_width</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- 竖向分隔线 带上下间距 -->
+    <style name="DividerFixedWidth.MarginTopBottom" parent="@style/DividerFixedWidth">
+        <item name="android:layout_marginTop">@dimen/common_margin_middle</item>
+        <item name="android:layout_marginBottom">@dimen/common_margin_middle</item>
+    </style>
+    <!-- 带搜索的Header样式 -->
+    <style name="SearchHeaderStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/common_blue</item>
+        <item name="android:paddingTop">@dimen/common_padding_small</item>
+        <item name="android:paddingRight">@dimen/common_padding</item>
+        <item name="android:paddingBottom">@dimen/common_padding_small</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_header_bar_height
+        </item>
+    </style>
+    <!-- 搜索输入框样式-->
+    <style name="SearchHeaderEtStyle">
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:textColorHint">@color/common_white</item>
+        <item name="android:background">@drawable/home_header_corner_bg</item>
+        <item name="android:paddingLeft">@dimen/common_padding</item>
+        <item name="android:paddingTop">@dimen/common_padding_small</item>
+        <item name="android:paddingBottom">@dimen/common_padding_small</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/common_margin_small</item>
+        <item name="android:layout_marginRight">@dimen/common_margin</item>
+        <item name="android:layout_marginBottom">@dimen/common_margin_small</item>
+        <item name="android:drawableLeft">@drawable/icon_search</item>
+        <item name="android:drawablePadding">@dimen/common_padding_middle</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- 通用列表样式-->
+    <style name="commonRecyclerView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+</resources>

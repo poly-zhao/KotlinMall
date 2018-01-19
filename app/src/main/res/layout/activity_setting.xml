@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical">
+
+    <com.stark.base.wighets.HeaderBar
+        style="@style/MatchWrap"
+        app:titleText="设置" />
+
+    <TextView
+        android:id="@+id/mUserProtocolTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:drawableRight="@drawable/icon_arrow"
+        android:padding="@dimen/common_padding"
+        android:text="用户协议" />
+
+    <TextView
+        android:id="@+id/mFeedBackTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:drawableRight="@drawable/icon_arrow"
+        android:padding="@dimen/common_padding"
+        android:text="反馈意见" />
+
+    <TextView
+        android:id="@+id/mAboutTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:drawableRight="@drawable/icon_arrow"
+        android:padding="@dimen/common_padding"
+        android:text="关于" />
+
+    <Button
+        android:id="@+id/mLogoutBtn"
+        style="@style/FullBtnStyle"
+        android:enabled="true"
+        android:text="退出登录" />
+</LinearLayout>

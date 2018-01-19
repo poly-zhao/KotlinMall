@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UserCenter</string>
+    <string name="hint_tel">请输入手机号码</string>
+    <string name="hint_verify">请输入验证码</string>
+    <string name="hint_pwd">请输入密码</string>
+    <string name="hint_pwd1">请确认密码</string>
+</resources>

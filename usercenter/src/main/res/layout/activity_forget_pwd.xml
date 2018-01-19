@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical.Common">
+
+    <com.stark.base.wighets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        app:titleText="忘记密码"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:layout_margin="@dimen/common_margin"
+        android:background="@drawable/border_corner_all">
+
+        <LinearLayout style="@style/MatchWrap.Horizontal">
+
+            <EditText
+                android:id="@+id/mMobileEt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_line_height"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_phone"
+                android:drawablePadding="@dimen/common_padding_small"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/common_padding_small" />
+
+            <View style="@style/DividerFixedWidth.MarginTopBottom" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerFixedHeight" />
+
+        <EditText
+            android:id="@+id/mVerifyCodeEt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@null"
+            android:drawableLeft="@drawable/icon_verify_code"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:hint="请输入短信验证码"
+            android:inputType="number"
+            android:paddingLeft="@dimen/common_padding_small" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mNextBtn"
+        style="@style/FullBtnStyle"
+        android:text="@string/common_next" />
+</LinearLayout>
