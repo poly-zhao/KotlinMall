@@ -1,11 +1,16 @@
 package com.stark.base.extend
 
+import android.graphics.drawable.AnimationDrawable
+import android.view.View
 import android.widget.ImageView
+import com.kennyc.view.MultiStateView
+import com.stark.base.R
 import com.stark.base.data.BaseResp
 import com.stark.base.mvp.view.BaseView
 import com.stark.base.rx.BaseSubscriber
 import com.stark.base.utils.GlideUtils
 import com.trello.rxlifecycle.LifecycleProvider
+import org.jetbrains.anko.find
 import rx.Observable
 import rx.Subscriber
 import rx.android.schedulers.AndroidSchedulers
@@ -63,4 +68,14 @@ fun <T> Observable<BaseResp<T>>.convert(): Observable<T> {
  */
 fun ImageView.loadUrl(url: String) {
     GlideUtils.loadUrlImage(context, url, this)
+}
+
+/*
+    多状态视图开始加载
+ */
+fun MultiStateView.startLoading(){
+    viewState = MultiStateView.VIEW_STATE_LOADING
+    val loadingView = getView(MultiStateView.VIEW_STATE_LOADING)
+    val animBackground = loadingView!!.find<View>(R.id.loading_anim_view).background
+    (animBackground as AnimationDrawable).start()
 }

@@ -8,12 +8,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.stark.base.ui.fragment.BaseFragment
 import com.stark.base.wighets.BannerImageLoader
+import com.stark.goodscenter.ui.activity.SearchGoodsActivity
 import com.stark.kotlinmall.*
 import com.stark.kotlinmall.ui.adapter.HomeDiscountAdapter
 import com.stark.kotlinmall.ui.adapter.TopicAdapter
 import com.youth.banner.Transformer
 import kotlinx.android.synthetic.main.fragment_home.*
 import me.crosswall.lib.coverflow.CoverFlow
+import org.jetbrains.anko.support.v4.startActivity
 
 /**
  * Created by zhao on 2018-01-18.
@@ -27,10 +29,17 @@ class HomeFragment : BaseFragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        initView()
         initBanner()
         initNews()
         initDiscount()
         initTopic()
+    }
+
+    private fun initView() {
+        mSearchEt.setOnClickListener{
+            startActivity<SearchGoodsActivity>()
+        }
     }
 
     private fun initTopic() {

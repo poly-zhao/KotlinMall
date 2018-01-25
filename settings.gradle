@@ -1,1 +1,1 @@
-include ':app', ':base', ':usercenter', ':Provider', ':messagecenter'
+include ':app', ':base', ':usercenter', ':Provider', ':messagecenter', ':goodscenter'
