@@ -80,4 +80,9 @@ dependencies {
     compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'
     //Kotlin Bus
     compile 'com.eightbitlab:rxbus:1.0.2'
+
+    compile 'ren.qinc.numberbutton:numberbutton:0.0.1'
+
+    //FlowLayout
+    compile 'com.zhy:flowlayout-lib:1.0.3'
 }

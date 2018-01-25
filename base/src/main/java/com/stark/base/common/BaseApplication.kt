@@ -12,13 +12,23 @@ import com.stark.base.injection.module.AppModule
  */
 class BaseApplication : Application() {
     lateinit var appComponent: AppComponent
+
     companion object {
 
-        lateinit var context:Context
+        lateinit var context: Context
     }
+
     override fun onCreate() {
         super.onCreate()
         context = this
         appComponent = DaggerAppComponent.builder().appModule(AppModule(this)).build()
+
+        Thread.setDefaultUncaughtExceptionHandler(object : Thread.UncaughtExceptionHandler {
+            override fun uncaughtException(t: Thread?, e: Throwable?) {
+                e?.printStackTrace()
+            }
+        })
     }
+
+
 }
